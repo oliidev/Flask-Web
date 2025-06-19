@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yeezy Coffee</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/bean.png') }}">
+</head>
+<body>
+
+  <!-- Navbar with Logo -->
+  <nav class="navbar">
+    <div class="navbar-container">
+
+      <!-- Logo -->
+      <a href="/home" class="logo-link">
+        <img src="{{ url_for('static', filename='assets/yeezycoffee.png') }}" alt="Yeezy Coffee Logo" class="logo">
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="/menu">MENU</a></li>
+          <li><a href="/about">ABOUT US</a></li>
+        <li><a href="/rewards">REWARDS</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+      </ul>
+
+      <!-- Dropdown Menu -->
+      <div class="dropdown">
+        <button class="dropbtn">
+          <img src="{{ url_for('static', filename='assets/menu-icon.png') }}" alt="Menu Icon" class="logo-img">
+        </button>
+        <div class="dropdown-content">
+          <a href="/join">Join now</a>
+          <a href="/signin">Sign in</a>
+          <a href="/aboutus">About us</a>
+          <a href="/careers">Careers</a>
+
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Content goes here -->
+  </main>
+
+</body>
+</html>

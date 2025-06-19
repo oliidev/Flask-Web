@@ -35,9 +35,30 @@ app.config['DEBUG'] = True
 #   action = "dancing"
 #   return render_template("tynote.html", name=person, verb=action)
 
-@app.route('/landingpage')
-def landingpage():
-  return render_template("landingpage.html")
+@app.route('/home')
+def homepage():
+  return render_template("home.html")
+
+@app.route('/menu')
+def menu():
+  return render_template("menu.html")
+
+@app.route('/rewards')
+def rewards():
+  return render_template("rewards.html")
+
+@app.route('/about')
+def about():
+  return render_template("about.html")
+
+@app.route('/contact')
+def contact():
+  return render_template("contact.html")
+
+@app.route('/order')
+def order():
+  return render_template("order.html")
+
 
 
 if __name__ == '__main__':
